@@ -9,7 +9,6 @@ input[type=text], select, textarea {
   resize: vertical 
 }
 
-
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -22,7 +21,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -32,10 +30,6 @@ img{
   width:100%;
   height:auto;
 }
-h2{
-  color: red;
-  font-style: italic;
-}
 video{
   height: auto;
   width: 90%;
@@ -43,10 +37,31 @@ video{
 p{
   color: darkcyan;
   font-family: tahoma;
+  font-size: 5vw;
+}
+p1{
+  font-size: 5vw;
 }
 p2{
   color: black;
   font-style: italic;
+}
+h1{
+  font-size: 10vw;
+}
+h2{
+  color: red;
+  font-style: italic;
+}
+p4{
+  font-size: 5vw;
+}
+h3{
+  font-size: 7vw;
+}
+h4{
+  font-style: italic;
+  font-size: 4vw;
 }
 img{
   float: left;
