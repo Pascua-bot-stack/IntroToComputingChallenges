@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>ad</title>
+</head>
+
+<body>
+<h1>This an ad</h1>
+
+</body>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<div>
+  <h3>Rate the video</h3>
+  <p>Content of the tutorial...</p>
+  <div>
+    <p>User Rating: <span id="userRating">4.5</span></p>
+    <button onclick="rateTutorial(5)">Rate 5 stars</button>
+  </div>
+</div>
+
+<script>
+  function rateTutorial(rating) {
+    var currentRating = parseFloat(document.getElementById('userRating').innerText);
+    var newRating = (currentRating + rating) / 2;
+    document.getElementById('userRating').innerText = newRating.toFixed(1);
+    
+  }
+</script>
+</html>
